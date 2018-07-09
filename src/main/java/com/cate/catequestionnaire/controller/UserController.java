@@ -12,7 +12,7 @@ public class UserController {
 	@Autowired
 	ConfigTestBean configTestBean;
 	
-	@RequestMapping("/test")
+	@RequestMapping("/")
 	public String test(){
 		StringBuffer str = new StringBuffer();
 		str.append(" secret:"+configTestBean.getSecret());
